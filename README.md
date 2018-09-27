@@ -1,7 +1,9 @@
 # BreadBuilder
 BreadBuilder for oscommerce admin
 
-Based on the breadbuilder settings your output will be auto-generated.
+Depanding on the breadbuilder settings your output will be auto-generated.
+BreadBuilder for osCommerce is based on: [Laravel Voyager](https://laravelvoyager.com/)
+
 
 The breadbuilder allows you to create layouts based on :
 -  Browse
