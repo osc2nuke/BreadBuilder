@@ -35,7 +35,9 @@ The breadbuilder allows you to create layouts based on :
 -  Browse
 -  Read (TODO)
 -  Edit (TODO)
+-  Add (TODO)
 -  Delete
+    Read as : BREAD
 
   Alternative layouts support. 
 
