@@ -113,7 +113,6 @@ COMMIT;
 
 ```
 # TODO
-
 - A settings page to configure the ComboTables (currently hardcoded).
 - Hooks for the alternive views (currently only manufacturers).
 - Add in browse page: Button Add New+
@@ -122,3 +121,10 @@ COMMIT;
 - Make view (shows in a modal).
 - Make Edit page
 - Make add new page.
+
+# Future Enhancements
+- Relate the created BREAD's to the admin menu.
+- Role management support.
+- Front-End support.
+- Data In-Export (csv,xml ...).
+- JSON settings (input validations, multiple-image sizes on upload).
