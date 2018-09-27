@@ -2,6 +2,7 @@
 BreadBuilder for oscommerce admin
 
 Depanding on the breadbuilder settings your output will be auto-generated.
+
 BreadBuilder for osCommerce is based on the idea from : [Laravel Voyager](https://laravelvoyager.com/)
 
 
