@@ -12,6 +12,15 @@ The breadbuilder allows you to create layouts based on :
 -  Edit (TODO)
 -  Delete
 
+  Alternative layouts support. 
+
+
+# DataTables
+
+DataTables is used to make the colums sortable.
+
+# Screenshots
+
 ![alt text][screenshot1]
 
 [screenshot1]: https://github.com/osc2nuke/breadbuilder/raw/master/screenshots/breadpage-1.png "Screenshot 1"
@@ -79,3 +88,9 @@ COMMIT;
 
 - A settings page to configure the ComboTables (currently hardcoded).
 - Hooks for the alternive views (currently only manufacturers).
+- Add in browse page: Button Add New+
+- Add in browse page: Button Bulk-delete.
+- Add in browse page: Search form.
+- Make view (shows in a modal).
+- Make Edit page
+- Make add new page.
