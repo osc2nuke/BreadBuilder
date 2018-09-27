@@ -28,8 +28,6 @@ The general principe is that for each supported page that has CRUD functionality
 - Hidden
 - Coordinates
 
-BreadBuilder for osCommerce is based on the idea from : [Laravel Voyager](https://laravelvoyager.com/)
-
 
 The breadbuilder allows you to create layouts based on :
 -  Browse
@@ -128,3 +126,5 @@ COMMIT;
 - Front-End support.
 - Data In-Export (csv,xml ...).
 - JSON settings (input validations, multiple-image sizes on upload).
+
+BreadBuilder for osCommerce is based on the idea from : [Laravel Voyager](https://laravelvoyager.com/)
