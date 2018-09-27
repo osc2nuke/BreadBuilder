@@ -7,6 +7,15 @@ This means that after you assigned a setting to your database field the output i
 
 The general principe is that for each supported page that has CRUD functionality within osCommerce, from now on require only a `Hook`
 
+The breadbuilder allows you to create layouts based on :
+-  Browse
+-  Read (TODO)
+-  Edit (TODO)
+-  Add (TODO)
+-  Delete
+
+    Read as : BREAD
+    
 ### supported fields:
 - Checkbox
 - Color
@@ -27,16 +36,6 @@ The general principe is that for each supported page that has CRUD functionality
 - Timestamp
 - Hidden
 - Coordinates
-
-
-The breadbuilder allows you to create layouts based on :
--  Browse
--  Read (TODO)
--  Edit (TODO)
--  Add (TODO)
--  Delete
-
-    Read as : BREAD
 
   Alternative layouts support. 
 
