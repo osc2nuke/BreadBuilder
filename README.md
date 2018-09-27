@@ -1,10 +1,12 @@
 # BreadBuilder
 BreadBuilder for oscommerce admin
 
-The breadbuilder allows you to create layouts based on
+Based on the breadbuilder settings your output will be auto-generated.
+
+The breadbuilder allows you to create layouts based on :
 -  Browse
--  Read
--  Edit
+-  Read (TODO)
+-  Edit (TODO)
 -  Delete
 
 ![alt text][screenshot1]
@@ -70,3 +72,7 @@ ALTER TABLE `data_rows`
 COMMIT;
 
 ```
+# TODO
+
+- A settings page to configure the ComboTables (currently hardcoded).
+- Hooks for the alternive views (currently only manufacturers).
