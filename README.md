@@ -7,6 +7,18 @@ The breadbuilder allows you to create layouts based on
 -  Edit
 -  Delete
 
+![alt text][screenshot1]
+
+[screenshot1]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot 1"
+
+![alt text][screenshot2]
+
+[screenshot2]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot 1"
+
+![alt text][screenshot3]
+
+[screenshot3]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot 1"
+
 # SQL
 ```
 
