@@ -9,15 +9,15 @@ The breadbuilder allows you to create layouts based on
 
 ![alt text][screenshot1]
 
-[screenshot1]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot 1"
+[screenshot1]: https://github.com/osc2nuke/breadbuilder/raw/master/screenshots/breadpage-1.png "Screenshot 1"
 
 ![alt text][screenshot2]
 
-[screenshot2]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot 1"
+[screenshot2]: https://github.com/osc2nuke/breadbuilder/raw/master/screenshots/breadpage-manufacturer.png "Screenshot 2"
 
 ![alt text][screenshot3]
 
-[screenshot3]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Screenshot 1"
+[screenshot3]: https://github.com/osc2nuke/breadbuilder/raw/master/screenshots/manufacturers.png "Screenshot 3"
 
 # SQL
 ```
