@@ -2,12 +2,12 @@
 BreadBuilder for oscommerce admin
 
 The breadbuilder allows you to create layouts based on
--Browse
--Read
--Edit
--Delete
+    -   Browse
+    -   Read
+    -   Edit
+    -   Delete
 
-
+# SQL
 ```
 
 DROP TABLE IF EXISTS `data_rows`;
