@@ -125,4 +125,4 @@ COMMIT;
 - Data In-Export (csv,xml ...).
 - JSON settings (input validations, multiple-image sizes on upload).
 
-BreadBuilder for osCommerce is based on the idea from : [Laravel Voyager](https://laravelvoyager.com/)
+BreadBuilder for osCommerce is based on : [Laravel Voyager](https://laravelvoyager.com/)
