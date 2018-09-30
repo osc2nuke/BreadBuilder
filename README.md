@@ -116,6 +116,7 @@ COMMIT;
 - Make fine-tune read page.
 - Make Edit page
 - Fine-tune add new page.
+- Use required checkbox if is multilanguage db field (breadbuilder.php)
 
 # Future Enhancements
 - Relate the created BREAD's to the admin menu.
