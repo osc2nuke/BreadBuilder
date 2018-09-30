@@ -9,9 +9,9 @@ The general principe is that for each supported page that has CRUD functionality
 
 The breadbuilder allows you to create layouts based on :
 -  Browse
--  Read (TODO)
+-  Read
 -  Edit (TODO)
--  Add (TODO)
+-  Add
 -  Delete
 
     Read as : BREAD
@@ -112,12 +112,10 @@ COMMIT;
 # TODO
 - A settings page to configure the ComboTables (currently hardcoded).
 - Hooks for the alternive views (currently only manufacturers).
-- Add in browse page: Button Add New+
-- Add in browse page: Button Bulk-delete.
 - Add in browse page: Search form.
-- Make view (shows in a modal).
+- Make fine-tune read page.
 - Make Edit page
-- Make add new page.
+- Fine-tune add new page.
 
 # Future Enhancements
 - Relate the created BREAD's to the admin menu.

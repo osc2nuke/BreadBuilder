@@ -1,6 +1,5 @@
 <?php
 
-
     class cma_bread
     {
 
@@ -59,7 +58,15 @@
 
             if($action == 'read')
             {
-                $this->read();
+                $dataHeadings = json_decode(json_encode($this->Types), FALSE);
+                $dataRows = json_decode(json_encode($this->read()), FALSE);
+                $dataTypes = [];
+
+                ob_start();
+                include('includes/modules/content/' . $this->group . '/templates/tpl_view_' . basename(__FILE__));
+                $template = ob_get_clean();
+
+                $oscTemplate->addContent($template, $this->group);                
             }
 
             if($action == 'edit')
@@ -75,7 +82,13 @@
 
             if($action == 'add')
             {
+                $dataHeadings = json_decode(json_encode($this->Types), FALSE);
+
                 $this->add();
+                include('includes/modules/content/' . $this->group . '/templates/tpl_add_' . basename(__FILE__));
+                $template = ob_get_clean();
+
+                $oscTemplate->addContent($template, $this->group);                
             }
 
             if($action == 'delete')
@@ -148,8 +161,17 @@
         public function read()
         {
             global $OSCOM_Hooks;
-            $unKnown = $OSCOM_Hooks->call('bread', 'Read'.ucfirst(strtolower($this->root)));
 
+            $QueryRaw =  $OSCOM_Hooks->call('bread', 'Read'.ucfirst(strtolower($this->root)));
+            $Query = tep_db_query($QueryRaw);
+            
+            if (tep_db_num_rows($Query)) {
+                while ($result = tep_db_fetch_array($Query)) {
+                    $this->data[$result[$id]] = $result;
+                }
+                return $this->data;
+            }
+            return false;
         }
 
         public function edit()
@@ -161,7 +183,7 @@
         public function add()
         {
             global $OSCOM_Hooks;
-            $unKnown = $OSCOM_Hooks->call('bread', 'Add'.ucfirst(strtolower($this->root)));
+            $OSCOM_Hooks->call('bread', 'Add'.ucfirst(strtolower($this->root)));
 
         }
 

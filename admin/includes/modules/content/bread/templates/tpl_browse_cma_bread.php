@@ -1,7 +1,12 @@
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"/>
 <div class="col-md-12">
-    <h1><i class="fas fa-industry"></i> <?php echo HEADING_TITLE; ?></h1><hr/>
-     
+    <div class='page-header'>
+        <div class="float-right">
+            <a href="<?php echo tep_href_link(pathinfo($_SERVER['PHP_SELF'], PATHINFO_BASENAME), 'action=add'.(isset($_GET['page']) ? '&page=' . $_GET['page'] : '')); ?>" class="btn  btn-success"><i class="fas fa-plus"></i> Add New</a>
+            <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Bulk Delete</button>
+        </div>
+        <h1><i class="fas fa-industry"></i> <?php echo HEADING_TITLE; ?></h1>
+    </div>
     <div class="table-responsive mt-3">
         <table id="dataTable" class="table table-striped table-bordered table-hover">
             <thead>
@@ -47,7 +52,7 @@
                             } 
                             echo '</td>';       
                         }
-                        echo '<td><button type="button" class="btn btn-sm btn-warning"><i class="far fa-eye"></i></button> ' .
+                        echo '<td><a href="'.tep_href_link(pathinfo($_SERVER['PHP_SELF'], PATHINFO_BASENAME), 'action=read'.(isset($_GET['page']) ? '&page=' . $_GET['page'] . '&' : '').'id='.$dataRowKey).'" class="btn btn-sm btn-warning"><i class="far fa-eye"></i></a> ' .
                              '<button type="button" class="btn btn-sm btn-primary"><i class="far fa-edit"></i></button> ' .
                              '<button type="button" class="btn btn-sm btn-danger"><i class="far fa-trash-alt"></i></button>' .
                              '</td>';
@@ -58,7 +63,11 @@
         </table>
     </div>
     <?php echo $this->getPagination(); ?>
+    <div class="bbody"></div>
 </div>
+
+
+
 <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(document).ready( function () {
@@ -81,7 +90,11 @@
 
         $('button.btn-danger').click(function (e) {
             ID = $(this).closest('tr').attr('id');
-            $.post( 'manufacturers.php?action=delete', { id: ID });
-        });    
+            $.post( '<?php echo pathinfo($_SERVER['PHP_SELF'], PATHINFO_BASENAME) ?>?action=delete', { id: ID });
+            $(this).closest('tr').remove();
+
+        });
+
+            
     });
 </script>
