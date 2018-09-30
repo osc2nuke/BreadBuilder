@@ -137,13 +137,7 @@
 <script type="text/javascript">
 $("form").submit(function(event){
     event.preventDefault();
-
-    data = new FormData( this );
-    //Form data
-    //var form_data = $(this).serializeArray();
-    //$.each(form_data, function (key, input) {
-    //    data.append(input.name, input.value);
-    //});    
+    
     $.ajax({
         url: '<?php echo pathinfo($_SERVER['PHP_SELF'], PATHINFO_BASENAME); ?>?action=add',
         type: 'POST',
@@ -152,7 +146,7 @@ $("form").submit(function(event){
         contentType: false
     });
   
-    //$.post( '<?php echo pathinfo($_SERVER['PHP_SELF'], PATHINFO_BASENAME); ?>?action=add', data);
+    $.post( '<?php echo pathinfo($_SERVER['PHP_SELF'], PATHINFO_BASENAME); ?>?action=add', data);
 });
 
 </script>
