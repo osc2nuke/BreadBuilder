@@ -218,6 +218,9 @@
             echo '</td>';
 
             echo '<td><div class="form-group form-check">
+                    <input '.(isset($dataRows->$column->required) && ($dataRows->$column->required == 1) ? 'checked="checked"':null).' name="' . $column . '[required]" type="checkbox" class="form-check-input" id="required">
+                    <label class="form-check-label" for="required">Multi-language Field</label>
+                  </div><div class="form-group form-check">
                     <input '.(isset($dataRows->$column->browse) && ($dataRows->$column->browse == 1) ? 'checked="checked"':null).' name="' . $column . '[browse]" type="checkbox" class="form-check-input" id="browse">
                     <label class="form-check-label" for="browse">Browse</label>
                   </div><div class="form-group form-check">
