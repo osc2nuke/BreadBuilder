@@ -113,10 +113,8 @@ COMMIT;
 - A settings page to configure the ComboTables (currently hardcoded).
 - Hooks for the alternive views (currently only manufacturers).
 - Add in browse page: Search form.
-- Make fine-tune read page.
 - Make Edit page
-- Fine-tune add new page.
-- Use required checkbox if is multilanguage db field (breadbuilder.php)
+- Fine-tune "add new" page.
 
 # Future Enhancements
 - Relate the created BREAD's to the admin menu.
