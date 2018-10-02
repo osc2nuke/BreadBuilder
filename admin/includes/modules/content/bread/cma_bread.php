@@ -55,19 +55,6 @@
                 $oscTemplate->addContent($template, $this->group);
             }
 
-            if($action == 'reada')
-            {
-                $dataHeadings = json_decode(json_encode($this->Types), FALSE);
-                $dataRows = json_decode(json_encode($this->read()), FALSE);
-                $dataTypes = [];
-
-                ob_start();
-                include('includes/modules/content/' . $this->group . '/templates/tpl_view_' . basename(__FILE__));
-                $template = ob_get_clean();
-
-                $oscTemplate->addContent($template, $this->group);                
-            }
-
             if($action == 'edit')
             {
 
@@ -149,22 +136,6 @@
             
             if (tep_db_num_rows($Query)) {
 
-                while ($result = tep_db_fetch_array($Query)) {
-                    $this->data[$result[$id]] = $result;
-                }
-                return $this->data;
-            }
-            return false;
-        }
-
-        public function reada()
-        {
-            global $OSCOM_Hooks;
-
-            $QueryRaw =  $OSCOM_Hooks->call('bread', 'Read'.ucfirst(strtolower($this->root)));
-            $Query = tep_db_query($QueryRaw);
-            
-            if (tep_db_num_rows($Query)) {
                 while ($result = tep_db_fetch_array($Query)) {
                     $this->data[$result[$id]] = $result;
                 }
