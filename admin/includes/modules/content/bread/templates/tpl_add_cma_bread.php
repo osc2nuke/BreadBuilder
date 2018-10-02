@@ -146,7 +146,6 @@ $("form").submit(function(event){
         contentType: false
     });
   
-    $.post( '<?php echo pathinfo($_SERVER['PHP_SELF'], PATHINFO_BASENAME); ?>?action=add', data);
 });
 
 </script>
