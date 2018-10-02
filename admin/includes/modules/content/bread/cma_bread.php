@@ -33,7 +33,6 @@
 
             if(pathinfo($_SERVER['PHP_SELF'], PATHINFO_BASENAME) != 'modules_admin_content.php')
             {
-                $OSCOM_Hooks->register('bread');
             }
         }
 
@@ -56,7 +55,7 @@
                 $oscTemplate->addContent($template, $this->group);
             }
 
-            if($action == 'read')
+            if($action == 'reada')
             {
                 $dataHeadings = json_decode(json_encode($this->Types), FALSE);
                 $dataRows = json_decode(json_encode($this->read()), FALSE);
@@ -158,7 +157,7 @@
             return false;
         }
 
-        public function read()
+        public function reada()
         {
             global $OSCOM_Hooks;
 
